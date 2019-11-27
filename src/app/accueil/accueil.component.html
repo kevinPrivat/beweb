@@ -6,5 +6,20 @@
         </div>
         <div class="col-6">Holy Crap !</div>
         <div class="col-6" id="crap">Ca marche</div>
+        <div class="col-12 mt-5">
+            <ol>
+                <li>
+                    <mat-form-field>
+                        <input matInput [(ngModel)]="name" placeholder="What's your name?">
+                    </mat-form-field>
+                </li>
+                <li>
+                    <button mat-raised-button (click)="openDialog()">Pick one</button>
+                </li>
+                <li *ngIf="animal">
+                    You chose: <i>{{animal}}</i>
+                </li>
+            </ol>
+        </div>
     </div>
 </div>

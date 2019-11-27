@@ -1,1 +1,24 @@
-<p>contact works!</p>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>{{ contact.nom }} {{ contact.prenom }}</mat-card-title>
+                    <mat-card-subtitle>{{ contact.age }}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjhHqkRhVG0AOR-CVsj7gLYQ6MTRBoBdOmSlHOArUR4zFvGpN9&s"
+                    alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                        bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
